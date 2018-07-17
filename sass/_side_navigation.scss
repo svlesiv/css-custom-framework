@@ -1,0 +1,56 @@
+/*_side_navigation.scss*/
+
+/*navigation----------------------------*/
+.lt-side-nav {
+	font-size: 0.9em;		
+	padding: 1em;
+	
+	.lt-side-nav-ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		text-align: left;
+	}	
+	
+	.lt-side-nav-a {
+		display: inline-block;
+		text-decoration: none;
+		color: $base-text-color;
+	  	position: relative;
+	  	&:hover {
+		    color: $accent-color;
+		}				
+	}
+	
+}
+
+/*link styles-----------------------*/
+//underline animation
+%link-transition{
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;		
+		transition: width 0.4s;
+	}
+	&:hover:after {
+		width: 100%;
+	}
+}
+.lt-link-transition {
+	@extend %link-transition;
+	&:after {
+		border-bottom: 2px solid $accent-color;
+	}
+}
+
+.lt-link-active{
+	font-weight: bold;
+}
+
+.lt-side-nav-ul li{
+	color: $accent-color;
+}

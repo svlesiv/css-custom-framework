@@ -1,0 +1,18 @@
+/*_miscellaneous.scss*/
+
+.lt-reverse-background-color{
+	background-color:$base-text-color;
+}
+
+.lt-reverse-text-color{
+	color:$base-body-color;
+}
+
+.lt-up-animation {	
+	transition: transform 100ms ease-out,
+		      	filter 50ms ease-out;
+	&:hover {
+		transform: translate(0, -1em) scale(1.05);
+		filter: brightness(0.7);
+	}
+} 

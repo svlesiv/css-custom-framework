@@ -1,0 +1,59 @@
+/*_mixins.scss*/
+
+@mixin box-shadow ($h-offset, $v-offset, $blur, $color){
+	-moz-box-shadow:    inset $h-offset $v-offset $blur $color;
+	-webkit-box-shadow: inset $h-offset $v-offset $blur $color;
+	box-shadow:         inset $h-offset $v-offset $blur $color;
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1px}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width + 1px}) {
+    @content;
+  }
+}
+
+
+//http://krasimirtsonev.com/blog/article/Two-handy-and-advanced-SASS-features-and-their-limitations
+//(modified version)
+@mixin generate-sizes($class, $property, $small, $medium, $large) {
+    .#{$class}-small { #{$property}: $small; }
+    .#{$class}-medium { #{$property}: $medium; }
+    .#{$class}-large { #{$property}: $large; }
+}
+
+@mixin generate-sizes-large($class, $property, $xlarge, $xxlarge, $xxxlarge) {
+    .#{$class}-xlarge { #{$property}: $xlarge; }
+    .#{$class}-xxlarge { #{$property}: $xxlarge; }
+    .#{$class}-xxxlarge { #{$property}: $xxxlarge; }
+}
+
+//button
+@mixin button-template ($bk-color, $accent-color, $txt-color){	
+	background:$bk-color;
+	color:$accent-color;	
+	border:1px solid $accent-color;
+	border-radius: 2px;
+	padding: 0.6em 1.2em;
+	cursor:pointer;
+	transition:all 0.3s ease;	
+
+	&:active, &:hover, &:focus {
+		color: $txt-color;
+	    border-color: adjust-hue($accent-color, 45deg);    
+		box-shadow:0 0 0.8em adjust-hue($accent-color, 45deg);  	
+	}	
+
+}
+

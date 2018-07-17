@@ -1,0 +1,24 @@
+/*_variables.scss*/
+
+/*color variables*/
+$base-body-color: rgba(12, 12, 12, 1);
+$base-text-color: rgba(200, 200, 200, 1);
+$accent-color:hsl(95, 84%, 78%);
+$accent-color-alpha:hsla(95, 84%, 78%, 0.5);
+$accent-complementary-color: complement($accent-color);
+$accent-complementary-color-alpha: complement($accent-color-alpha);
+$accent-color-mix: mix($accent-color-alpha, $accent-complementary-color, 17);
+$accent-complementary-color-mix: mix($accent-complementary-color, $accent-color, 17);
+
+/*fonts*/
+$font-family-header:"Playfair Display", serif;
+$font-family-body:"Raleway", Arial, Helvetica, sans-serif;
+
+/*media*/
+$mobile-width: 551px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+/*other*/
+$border-1: 1px solid $accent-color;
+$border-2: 1px solid $accent-complementary-color;
