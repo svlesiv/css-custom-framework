@@ -1,15 +1,15 @@
 /*_button.scss*/
 
 .lt-button-default-1{
-	@include button-template($base-body-color, $accent-color, $base-text-color);
+  @include button-template($base-body-color, $accent-color, $base-text-color);
 }
 .lt-button-default-2{
-	@include button-template($base-body-color, $accent-complementary-color, $base-text-color);
+  @include button-template($base-body-color, $accent-complementary-color, $base-text-color);
 }
 
 
 //adjust style of a link with class 'button'
 a[class^="lt-button"]{
-	padding: 0.67em 1.27em;
-	text-decoration:none;
-} 
+  padding: 0.67em 1.27em;
+  text-decoration:none;
+}

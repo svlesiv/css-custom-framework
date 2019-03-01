@@ -2,79 +2,79 @@
 
 /*navigation----------------------------*/
 .lt-nav {
-	font-size: 1.3em;
-	font-weight: bold;
-	width: 90vw;	
-	padding: 1em;
-	
-	.lt-nav-ul {
-		padding: 0;
-		margin: 0;
-		list-style-type: none;
-		text-align: left;
-	}
-	
-	.lt-nav-li {		
-		display: inline;
-		padding-right: 3em;
-	}	
-	.lt-nav-a {
-		display: inline-block;
-		text-decoration: none;
-		color: $base-text-color;
-	  	position: relative;
-	  	&:hover {
-		    color: $accent-color;
-		}				
-	}
-	.lt-nav-active-a{
-		    color:$accent-color;
-	}
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 90vw;
+  padding: 1em;
+
+  .lt-nav-ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .lt-nav-li {
+    display: inline;
+    padding-right: 3em;
+  }
+  .lt-nav-a {
+    display: inline-block;
+    text-decoration: none;
+    color: $base-text-color;
+      position: relative;
+      &:hover {
+        color: $accent-color;
+    }
+  }
+  .lt-nav-active-a{
+        color:$accent-color;
+  }
 }
 
 /*link styles-----------------------*/
 //underline animation
 %link-transition{
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 0%;		
-		transition: width 0.4s;
-	}
-	&:hover:after {
-		width: 100%;
-	}
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    transition: width 0.4s;
+  }
+  &:hover:after {
+    width: 100%;
+  }
 }
 .lt-link-transition {
-	@extend %link-transition;
-	&:after {
-		border-bottom: 2px solid $accent-color;
-	}
+  @extend %link-transition;
+  &:after {
+    border-bottom: 2px solid $accent-color;
+  }
 }
 
 /*media-----------------------------*/
 //responsive nav
 @include tablet {
-	/* splits nav into 2 columns
-	   http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
-	.lt-nav-li{
-		width: 50%;
-		padding: 0.5em;
-	}
-	.lt-nav-li:nth-child(even) {		
-		  float: right;		 
-	}
-	.lt-nav-li:nth-child(odd) {		
-		  float: left;		 
-	}
+  /* splits nav into 2 columns
+     http://stackoverflow.com/questions/13104818/simple-2-column-navigation-with-css-and-a-single-list */
+  .lt-nav-li{
+    width: 50%;
+    padding: 0.5em;
+  }
+  .lt-nav-li:nth-child(even) {
+      float: right;
+  }
+  .lt-nav-li:nth-child(odd) {
+      float: left;
+  }
 }
 
 @include mobile {
-	.lt-nav .lt-nav-li {		
-		display: block;
-		padding: 0.2em;		
-	}
+  .lt-nav .lt-nav-li {
+    display: block;
+    padding: 0.2em;
+  }
 }

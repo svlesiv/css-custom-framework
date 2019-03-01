@@ -1,5 +1,5 @@
 # CSS custom framework
-This site website demonstrates the framework which I have created, with the accompanying documentation and examples.
+This website demonstrates the framework which I have created, with the accompanying documentation and examples.
 [Demo of the website](http://svitlanalesiv.me/assignment4/index.html)
 
 ![](./img/css-framework.gif)

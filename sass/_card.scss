@@ -1,36 +1,36 @@
 /*_card.scss*/
 
 .lt-card-main{
-	background: lighten($base-body-color, 5);
-	width:70vw;		
-	padding:2em;
-	margin:1em;			
-	border-radius: 2px;
-	@include box-shadow(0, 0, 3px, $accent-color);
+  background: lighten($base-body-color, 5);
+  width:70vw;
+  padding:2em;
+  margin:1em;
+  border-radius: 2px;
+  @include box-shadow(0, 0, 3px, $accent-color);
 }
 
 .lt-card-secondary{
-	background: $base-text-color;
-	color:$base-body-color;	
-	padding: 1em;	
-	border-radius: 2px;
-	@include box-shadow(0, 0, 3px, $accent-color);
+  background: $base-text-color;
+  color:$base-body-color;
+  padding: 1em;
+  border-radius: 2px;
+  @include box-shadow(0, 0, 3px, $accent-color);
 }
 
-.lt-card{		
-	color:$base-body-color;
-	font-size:1.3em;
-	font-weight:900;
-	padding: 1em;	
-	width:100%;		
-	@include box-shadow(0, 0, 3px, $accent-color);
-	h1,h2,h3,h4,h5,h6{
-		color: $base-body-color;
-	}		
+.lt-card{
+  color:$base-body-color;
+  font-size:1.3em;
+  font-weight:900;
+  padding: 1em;
+  width:100%;
+  @include box-shadow(0, 0, 3px, $accent-color);
+  h1,h2,h3,h4,h5,h6{
+    color: $base-body-color;
+  }
 }
 
 @include mobile{
-	.lt-card-main{
-		width: 85vw;
-	}
+  .lt-card-main{
+    width: 85vw;
+  }
 }

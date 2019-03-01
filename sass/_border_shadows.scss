@@ -1,39 +1,39 @@
 /*_border_shadows.scss*/
 
-.lt-box-shadow {	
-	@include box-shadow(0, 0, 3px, $accent-complementary-color);
+.lt-box-shadow {
+  @include box-shadow(0, 0, 3px, $accent-complementary-color);
 }
 
 // border with main color
 .lt-border-right-1{
-	border-right: 1px solid $accent-color-alpha;
+  border-right: 1px solid $accent-color-alpha;
 }
 
 .lt-border-left-1{
-	border-left: 1px solid $accent-color-alpha;
+  border-left: 1px solid $accent-color-alpha;
 }
 
 .lt-border-top-1{
-	border-top: 1px solid $accent-color-alpha;
+  border-top: 1px solid $accent-color-alpha;
 }
 
 .lt-border-bottom-1{
-	border-bottom: 1px solid $accent-color-alpha;
+  border-bottom: 1px solid $accent-color-alpha;
 }
 
 // border with complementary color
 .lt-border-right-2{
-	border-right: 1px solid $accent-complementary-color-alpha;
+  border-right: 1px solid $accent-complementary-color-alpha;
 }
 
 .lt-border-left-2{
-	border-left: 1px solid $accent-complementary-color-alpha;
+  border-left: 1px solid $accent-complementary-color-alpha;
 }
 
 .lt-border-top-2{
-	border-top: 1px solid $accent-complementary-color-alpha;
+  border-top: 1px solid $accent-complementary-color-alpha;
 }
 
 .lt-border-bottom-2{
-	border-bottom: 1px solid $accent-complementary-color-alpha;
+  border-bottom: 1px solid $accent-complementary-color-alpha;
 }

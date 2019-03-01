@@ -13,7 +13,6 @@
 @include generate-sizes-large("lt-margin-left", "margin-left", 15em, 25em, 70em);
 @include generate-sizes-large("lt-margin-bottom", "margin-bottom", 15em, 25em, 70em);
 
-
 //paddings
 @include generate-sizes("lt-padding", "padding", 1em, 3em, 7em);
 @include generate-sizes("lt-padding-top", "padding-top", 1em, 3em, 7em);
@@ -27,18 +26,16 @@
 @include generate-sizes-large("lt-padding-left", "padding-left", 16em, 22em, 70em);
 @include generate-sizes-large("lt-padding-bottom", "padding-bottom", 16em, 22em, 70em);
 
-
 //text alignment
 .lt-text-right{
-	text-align: right;
+  text-align: right;
 }
 .lt-text-left{
-	text-align: left;
+  text-align: left;
 }
-.lt-text-center{	
-	text-align: center;
+.lt-text-center{
+  text-align: center;
 }
-
 
 //width
 @include generate-sizes("lt-width", "width", 25vw, 35vw, 45vw);

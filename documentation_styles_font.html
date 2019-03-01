@@ -1,112 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Documentation</title>		
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/lt-style.css">	
+  <meta charset="UTF-8">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lt-style.css">
 </head>
 <body class="lt-grid-container">
-	<header class="lt-col-1-6-desktop lt-row-1-1-desktop 
-					lt-col-1-3-tablet lt-row-1-1-tablet 
-					lt-col-1-1-mobile lt-row-1-1-mobile 
-					lt-box-shadow">
+  <header class="lt-col-1-6-desktop lt-row-1-1-desktop
+          lt-col-1-3-tablet lt-row-1-1-tablet
+          lt-col-1-1-mobile lt-row-1-1-mobile
+          lt-box-shadow">
 
-		<!-- main navigation -->			
-		<nav class="lt-nav">
-			<ul class="lt-nav-ul">
-				<li class="lt-nav-li"><a href="index.html" class="lt-nav-a  lt-link-transition">Home</a></li>			
-				<li class="lt-nav-li"><a href="documentation.html" class="lt-nav-a lt-link-transition lt-nav-active-a">Documentation</a></li>
-				<li class="lt-nav-li"><a href="examples.html" class="lt-nav-a lt-link-transition">Examples</a></li>	
-			</ul>
-		</nav>
+    <!-- main navigation -->
+    <nav class="lt-nav">
+      <ul class="lt-nav-ul">
+        <li class="lt-nav-li"><a href="index.html" class="lt-nav-a  lt-link-transition">Home</a></li>
+        <li class="lt-nav-li"><a href="documentation.html" class="lt-nav-a lt-link-transition lt-nav-active-a">Documentation</a></li>
+        <li class="lt-nav-li"><a href="examples.html" class="lt-nav-a lt-link-transition">Examples</a></li>
+      </ul>
+    </nav>
 
-	</header>
-	
-	<aside class="lt-col-1-1-desktop lt-row-2-5-desktop 	
-				lt-col-1-1-tablet lt-row-2-5-tablet
-				lt-col-1-1-mobile lt-row-2-2-mobile
-				lt-padding-left-small lt-padding-right-medium
-				lt-border-right-2
-				adjust-width">
-		
-		
-		<!-- side navigation -->
-		<nav class="lt-side-nav">
-			<ul class="lt-side-nav-ul">
+  </header>
 
-				<!-- Getting started	 -->		
-				<li class="lt-margin-top-small">Getting started</li>
-				<li><a href="documentation_intro.html" 
-					class="lt-side-nav-a lt-link-transition">Instalation</a></li>
-				
-				<!-- Layout -->
-				<li class="lt-margin-top-small">Layout</li>
-				<li><a href="documentation_layout.html" 
-					class="lt-side-nav-a lt-link-transition">Grid</a></li>
+  <aside class="lt-col-1-1-desktop lt-row-2-5-desktop
+        lt-col-1-1-tablet lt-row-2-5-tablet
+        lt-col-1-1-mobile lt-row-2-2-mobile
+        lt-padding-left-small lt-padding-right-medium
+        lt-border-right-2
+        adjust-width">
 
-				<!-- Components -->
-				<li class="lt-margin-top-small">Components</li>
-				<li><a href="documentation_components_nav.html" 
-					class="lt-side-nav-a lt-link-transition">Navigation</a></li>
-				<li><a href="documentation_components_hero.html" 
-					class="lt-side-nav-a lt-link-transition">Hero</a></li>
-				<li><a href="documentation_components_button.html" 
-					class="lt-side-nav-a lt-link-transition">Button</a></li>
-				
-				<!-- Styles -->
-				<li class="lt-margin-top-small">Styles</li>
-				<li><a href="documentation_styles_color.html" 
-					class="lt-side-nav-a lt-link-transition">Colors</a></li>
-				<li><a href="documentation_styles_font.html" 
-					class="lt-side-nav-a lt-link-transition lt-link-active">Fonts</a></li>
-				<li><a href="documentation_styles_breakpoints.html" 
-					class="lt-side-nav-a lt-link-transition">Breakpoints</a></li>		
-			</ul>
-		</nav>
-	</aside>
 
-	<main class="lt-col-2-6-desktop lt-row-2-5-desktop 	
-				lt-col-2-3-tablet lt-row-2-5-tablet
-				lt-col-1-1-mobile lt-row-3-5-mobile
-				lt-padding-left-small">
-		
-		<!-- article -->
-		<article class="lt-card-main lt-margin-right-small">
-			<h1>Styles</h1>			
-			<h2>Fonts</h2>
-				
-			<p>Font families can be changed by overwriting Sass variables, stored in _variables.scss file. Also if it is an external font, you need to provide a link to that font either in your HTML file or lt-style.scss  file (in sass folder).</p>				
-			
-			<p>Lets copy-paste new google fonts in lt-style.scss file.</p>
-			<div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
-				<code>@import "https://fonts.googleapis.com/css?family=Nosifer|Titan+One";</code>
-				<code>@import "https://fonts.googleapis.com/css?family=Titan+One";</code>				
-			</div>
+    <!-- side navigation -->
+    <nav class="lt-side-nav">
+      <ul class="lt-side-nav-ul">
 
-			<p>Now we can change Sass variables in _variables.scss file.</p>
-			<div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
-				<code>$font-family-header: "Nosifer", cursive;</code>
-				<code>$font-family-body: "Titan One", cursive;</code>				
-			</div>
-			<img src="img/font-family.jpg" alt="font family change" class="lt-width-medium lt-margin-bottom-medium">
+        <!-- Getting started	 -->
+        <li class="lt-margin-top-small">Getting started</li>
+        <li><a href="documentation_intro.html"
+          class="lt-side-nav-a lt-link-transition">Instalation</a></li>
 
-			<p>Font sizes can be adjusted in lt-style.scss file by overwriting CSS variables in a :root pseudo-class. Please keep in mind that the framework uses responsive typography. Hence, you might want to adjust font sizes also in media queries which you can find in the same document.</p>				
-			<div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
-				<code>--base-font-size: 1.3em;</code>
-				<code>--h1-font-size: 3.5em;</code>
-				<code>--h2-font-size: 2.7em;</code>		
-			</div>
-			<img src="img/font-size.jpg" alt="font size change" class="lt-width-medium">										
-		</article>
-		
-	</main>
+        <!-- Layout -->
+        <li class="lt-margin-top-small">Layout</li>
+        <li><a href="documentation_layout.html"
+          class="lt-side-nav-a lt-link-transition">Grid</a></li>
 
-	<footer class="lt-col-1-6-desktop lt-row-6-6-desktop 
-					lt-col-1-3-tablet lt-row-6-6-tablet
-					lt-col-1-1-mobile lt-row-6-6-mobile 
-					lt-text-right lt-padding-right-medium">
-		<p>&copy; LightKit</p>
-	</footer>
+        <!-- Components -->
+        <li class="lt-margin-top-small">Components</li>
+        <li><a href="documentation_components_nav.html"
+          class="lt-side-nav-a lt-link-transition">Navigation</a></li>
+        <li><a href="documentation_components_hero.html"
+          class="lt-side-nav-a lt-link-transition">Hero</a></li>
+        <li><a href="documentation_components_button.html"
+          class="lt-side-nav-a lt-link-transition">Button</a></li>
+
+        <!-- Styles -->
+        <li class="lt-margin-top-small">Styles</li>
+        <li><a href="documentation_styles_color.html"
+          class="lt-side-nav-a lt-link-transition">Colors</a></li>
+        <li><a href="documentation_styles_font.html"
+          class="lt-side-nav-a lt-link-transition lt-link-active">Fonts</a></li>
+        <li><a href="documentation_styles_breakpoints.html"
+          class="lt-side-nav-a lt-link-transition">Breakpoints</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="lt-col-2-6-desktop lt-row-2-5-desktop
+        lt-col-2-3-tablet lt-row-2-5-tablet
+        lt-col-1-1-mobile lt-row-3-5-mobile
+        lt-padding-left-small">
+
+    <!-- article -->
+    <article class="lt-card-main lt-margin-right-small">
+      <h1>Styles</h1>
+      <h2>Fonts</h2>
+
+      <p>Font families can be changed by overwriting Sass variables, stored in _variables.scss file. Also if it is an external font, you need to provide a link to that font either in your HTML file or lt-style.scss  file (in sass folder).</p>
+
+      <p>Lets copy-paste new google fonts in lt-style.scss file.</p>
+      <div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
+        <code>@import "https://fonts.googleapis.com/css?family=Nosifer|Titan+One";</code>
+        <code>@import "https://fonts.googleapis.com/css?family=Titan+One";</code>
+      </div>
+
+      <p>Now we can change Sass variables in _variables.scss file.</p>
+      <div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
+        <code>$font-family-header: "Nosifer", cursive;</code>
+        <code>$font-family-body: "Titan One", cursive;</code>
+      </div>
+      <img src="img/font-family.jpg" alt="font family change" class="lt-width-medium lt-margin-bottom-medium">
+
+      <p>Font sizes can be adjusted in lt-style.scss file by overwriting CSS variables in a :root pseudo-class. Please keep in mind that the framework uses responsive typography. Hence, you might want to adjust font sizes also in media queries which you can find in the same document.</p>
+      <div class="lt-card-secondary lt-margin-top-small lt-margin-bottom-medium">
+        <code>--base-font-size: 1.3em;</code>
+        <code>--h1-font-size: 3.5em;</code>
+        <code>--h2-font-size: 2.7em;</code>
+      </div>
+      <img src="img/font-size.jpg" alt="font size change" class="lt-width-medium">
+    </article>
+
+  </main>
+
+  <footer class="lt-col-1-6-desktop lt-row-6-6-desktop
+          lt-col-1-3-tablet lt-row-6-6-tablet
+          lt-col-1-1-mobile lt-row-6-6-mobile
+          lt-text-right lt-padding-right-medium">
+    <p>&copy; LightKit</p>
+  </footer>
 </body>
 </html>

@@ -1,23 +1,23 @@
 /*_hero.scss*/
 
 .lt-background-cover{
-	background-size: cover;		
-	margin: 0;
+  background-size: cover;
+  margin: 0;
 }
 
-.lt-hero-header{	
-	p{
-		font-size: 1.3em;
-		color:$base-body-color;
-	}
-	h1 {
-		font-size: 3em;
-		color:$base-body-color;
-	}
-	h2{
-		font-size: 1.7em;
-		color:$base-body-color;
-	}
+.lt-hero-header{
+  p{
+    font-size: 1.3em;
+    color:$base-body-color;
+  }
+  h1 {
+    font-size: 3em;
+    color:$base-body-color;
+  }
+  h2{
+    font-size: 1.7em;
+    color:$base-body-color;
+  }
 }
 
 //create height property with different sizes
@@ -25,38 +25,37 @@
 @include generate-sizes-large("lt-height", "height", 100vh, 150vh, 200vh);
 
 @include desktop{
-	.lt-visible-large{
-		visibility: visible;
-	}
-	.lt-visible-medium{
-		display:none;
-	}
-	.lt-visible-small{
-		display:none;
-	}
-	
+  .lt-visible-large{
+    visibility: visible;
+  }
+  .lt-visible-medium{
+    display:none;
+  }
+  .lt-visible-small{
+    display:none;
+  }
 }
 
 @include tablet{
-	.lt-visible-large{
-		display:none;
-	}
-	.lt-visible-medium{
-		visibility: visible;
-	}
-	.lt-visible-small{
-		display:none;
-	}
+  .lt-visible-large{
+    display:none;
+  }
+  .lt-visible-medium{
+    visibility: visible;
+  }
+  .lt-visible-small{
+    display:none;
+  }
 }
 
 @include mobile{
-	.lt-visible-large{
-		display:none;
-	}
-	.lt-visible-medium{
-		display:none;
-	}
-	.lt-visible-small{
-		visibility: visible;
-	}	
+  .lt-visible-large{
+    display:none;
+  }
+  .lt-visible-medium{
+    display:none;
+  }
+  .lt-visible-small{
+    visibility: visible;
+  }
 }
